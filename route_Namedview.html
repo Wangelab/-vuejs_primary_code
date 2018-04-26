@@ -1,0 +1,29 @@
+<!-- 命名视图 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>route命名视图</title>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue-router"></script> -->
+	<script type="text/javascript" src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+</head>
+<body>
+	<div id="namedview">
+	<div>
+		<router-link to="/">首页</router-link>
+		<router-link to="/login">登录</router-link>
+		<router-link to="/user_management">用户管理</router-link>
+		<router-link to="/Post_Management">帖子管理</router-link>
+	</div>
+	<div>
+		<router-view name="sidebar"></router-view>
+		<router-view name="content"></router-view>
+
+
+	</div>
+	</div>
+	<script type="text/javascript" src="route_Namedview.js"></script>
+
+</body>
+</html>
