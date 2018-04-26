@@ -13,6 +13,7 @@ var cal = new Vue({
 		},
 		average:function(){
 			aver = Math.round(this.sum / 3.0);
+// 			round() 方法返回浮点数x的四舍五入值。
 			return aver;
 		}
 	}
