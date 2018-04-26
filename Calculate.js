@@ -9,6 +9,7 @@ var cal = new Vue({
 	computed:{
 		sum:function(){
 			return parseFloat(this.math) + parseFloat(this.physics) + parseFloat(this.english);
+// parseFloat()保留两位小数
 		},
 		average:function(){
 			aver = Math.round(this.sum / 3.0);
