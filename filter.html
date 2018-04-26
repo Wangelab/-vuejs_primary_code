@@ -1,0 +1,28 @@
+<!-- 过滤器 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>过滤器</title>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+	<div id="filt">
+		<div>
+			<input type="text" v-model="length">mm
+			<br>
+			{{length | meter}}
+			<!-- 磨具厂 的长度-->
+		</div>
+		<hr>
+		<div>
+			<input type="text" v-model="price">
+			{{ price | currency()}}
+		</div>
+		
+	</div>
+
+	<script type="text/javascript" src="filter.js"></script>
+
+</body>
+</html>
