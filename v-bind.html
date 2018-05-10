@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>v-bind</title>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<style type="text/css">
+		.active{
+			background: #a10;
+		}
+	</style>
+</head>
+<body>
+	<div id="bind">
+		<a v-bind:class="{active: isActive}" v-bind:href="url" >
+			点我
+		</a>
+		<!--{active: isActive} {添加的类，什么时候添加}-->
+	</div>
+	<script type="text/javascript" src="v-bind.js"></script>
+
+</body>
+</html>
