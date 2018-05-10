@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<title>my name</title>
+</head>
+<body>
+<div id="app">
+	<div>
+		<span v-if="name">你的姓名是: {{name}}</span>
+		<input type="text" name="" v-model.trim="name">
+		<!--v-model.trim #去空格
+			v-model.number #格式化，数字
+			v-model.lazy #惰性跟新
+		-->
+	</div>
+	<div>
+		<span v-show="age">你的年龄是：{{ age }}</span>
+		<input type="text" name="" v-model.number="age">
+	</div>
+	<div>
+		<span>你的性别：{{sex}}</span>
+		<input type="text" name="" v-model.lazy="sex">
+
+	</div>
+	<label >
+		男
+		<input v-model="sex" value="male" type="checkbox" >
+	</label>
+	<label>
+		女
+		<input v-model="sex" value="female" type="checkbox" >
+	</label>
+	<br>
+	{{sex}}
+	<br>
+	<textarea v-model="article"></textarea>
+	<br>
+	<div>你来自哪里？</div>
+	<select v-model="dest" multiple="">
+		<option value="1">万家寨</option>
+		<option value="2">化州</option>
+		<option value="3">王家庄</option>
+		<option value="4">机场</option>
+		
+	</select>
+	{{dest}}
+	<div>你要去哪里？</div>
+	<select v-model="from">
+		<option value="1">万家寨</option>
+		<option value="2">化州</option>
+
+	</select>
+	{{from}}
+</div>
+	
+	
+
+<script type="text/javascript" src="v-model.js"></script>
+
+</body>
+</html>
