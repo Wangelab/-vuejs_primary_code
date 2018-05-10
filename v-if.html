@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- 控制流 -->
+	<meta charset="utf-8">
+	<title>v-if</title>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+	<div id="v-forgl">
+		<div v-if="role == 'admin'" >
+			管理员你好
+
+		</div>
+		<div v-else-if="role == 'hr'">
+			待查看简历列表：。。。
+		</div>
+		<div v-else>
+			你没有权限访问此页面
+		</div>
+	</div>
+	<script type="text/javascript" src="v-if.js"></script>
+</body>
+</html>
