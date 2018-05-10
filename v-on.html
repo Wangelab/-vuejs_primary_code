@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>v-on事件</title>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+	<div id="v-on">
+		<button v-on="{mouseenter:onEnter,mouseleave:onOut}" v-on:click="onClick">点我</button>
+		<form @keyup.enter="onEnters" v-on:submit.prevent="onSubmit()">
+			<!--v-on:submit.stop="onSubmit()"-->
+			<input type="text" name="">
+			<button type="submit" >提交</button>
+		</form>
+	</div>
+	<script type="text/javascript" src="v-on.js"></script>
+</body>
+</html>
